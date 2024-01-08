@@ -408,8 +408,9 @@ class Sistema:
         registros = self.sql.fetchall()
 
         self.situacao_titulo = ''
+
         for reg in self.registros: 
-            if self.ex_reclamacao.get() == reg[3]:
+            if self.cons_reclamacao.get() == reg[3]:
                 self.situacao_titulo = 'existe'
             else:
                 print()
